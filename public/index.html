@@ -25,8 +25,32 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+    body, html {
+      height: 100%;
+      margin: auto;
+    }
+    
+    .bg {
+      /* The image used */
+      background-image: url("image2.jpg");
+    
+      /* Full height */
+      height: 180%; 
+    
+      /* Center and scale the image nicely */
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
+    #root {
+      text-align: center;
+    }
+    </style>
   </head>
-  <body>
+  <body >
+    <div class="bg">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +63,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    </div>
   </body>
 </html>

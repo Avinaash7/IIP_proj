@@ -58,12 +58,6 @@ export class MedicalHistory extends Component {
           defaultValue={values.chr_dis}
           />
           <br/>
-          <TextField hintText="Assigned doctor"
-          floatingLabelText="Doctor name"
-          onChange={handleChange('assign_doc')}
-          defaultValue={values.assign_doc}
-          />
-          <br/>
           <TextField hintText="Enter your email"
           floatingLabelText="Email"
           onChange={handleChange('email')}
