@@ -34,7 +34,7 @@ export class UserForm extends Component {
         meds:'',
         prob:'',
         med_allergy:'',
-        bill:'',
+        bill:''
     }
 
     //proceed to next step
@@ -63,8 +63,8 @@ export class UserForm extends Component {
     }
   render() {
     const {step}=this.state
-    const {fname,lname,email,occupation,city,bio}=this.state;
-    const values={fname,lname,email,occupation,city,bio}
+    const {fname,lname,pat_dob,pat_addr,sex,blood,chr_dis,email,phnum,occupation,city,policy_holder,pol_dob,policy,rel_to_patient,pol_addr,pol_ph_num,sumass,validity,hos,hosno,docname,docid,visitdate,meds,prob,med_allergy,bill}=this.state;
+    const values={fname,lname,pat_dob,pat_addr,sex,blood,chr_dis,email,phnum,occupation,city,policy_holder,pol_dob,policy,rel_to_patient,pol_addr,pol_ph_num,sumass,validity,hos,hosno,docname,docid,visitdate,meds,prob,med_allergy,bill}
 
     switch(step){
         case 1:

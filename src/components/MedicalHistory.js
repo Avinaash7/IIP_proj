@@ -100,5 +100,6 @@ const styles={
   }
 }
 
+
 export default MedicalHistory;
 
