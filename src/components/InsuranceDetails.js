@@ -58,6 +58,18 @@ export class InsuranceDetails extends Component {
           defaultValue={values.pol_ph_num}
           />
           <br/>
+          <TextField hintText="Enter the sum assured in insurance "
+          floatingLabelText="Sum assured"
+          onChange={handleChange('sumass')}
+          defaultValue={values.sumass}
+          />
+          <br/>
+          <TextField hintText="Enter the validity of insurance "
+          floatingLabelText="Valid upto"
+          onChange={handleChange('validity')}
+          defaultValue={values.validity}
+          />
+          <br/>
           <RaisedButton
           label="previous"
           primary={false}

@@ -14,7 +14,6 @@ export class UserForm extends Component {
         sex:'',
         blood:'',
         chr_dis:'',
-        assign_doc:'',
         email:'',
         phnum:'',
         occupation:'',
@@ -25,8 +24,17 @@ export class UserForm extends Component {
         rel_to_patient:'',
         pol_addr:'',
         pol_ph_num:'',
+        sumass:'',
+        validity:'',
+        hos:'',
+        hosno:'',
+        docname:'',
+        docid:'',
+        visitdate:'',
         meds:'',
+        prob:'',
         med_allergy:'',
+        bill:''
     }
 
     //proceed to next step
@@ -55,8 +63,8 @@ export class UserForm extends Component {
     }
   render() {
     const {step}=this.state
-    const {fname,lname,email,occupation,city,bio}=this.state;
-    const values={fname,lname,email,occupation,city,bio}
+    const {fname,lname,pat_dob,pat_addr,sex,blood,chr_dis,email,phnum,occupation,city,policy_holder,pol_dob,policy,rel_to_patient,pol_addr,pol_ph_num,sumass,validity,hos,hosno,docname,docid,visitdate,meds,prob,med_allergy,bill}=this.state;
+    const values={fname,lname,pat_dob,pat_addr,sex,blood,chr_dis,email,phnum,occupation,city,policy_holder,pol_dob,policy,rel_to_patient,pol_addr,pol_ph_num,sumass,validity,hos,hosno,docname,docid,visitdate,meds,prob,med_allergy,bill}
 
     switch(step){
         case 1:
@@ -69,7 +77,7 @@ export class UserForm extends Component {
             )
         case 2:
             return(
-                <InsuranceDetails
+                <Medicine
                 previousStep={this.previousStep}
                 nextStep={this.nextStep}
                 handleChange={this.handleChange}
@@ -78,7 +86,7 @@ export class UserForm extends Component {
             )
         case 3:
             return(
-                <Medicine
+                <InsuranceDetails
                 previousStep={this.previousStep}
                 nextStep={this.nextStep}
                 handleChange={this.handleChange}
